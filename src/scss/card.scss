@@ -1,0 +1,95 @@
+// contntent element's
+.card-wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  .card {
+    position: relative;
+    width: 100%;
+    display: flex;
+    transition: .3s;
+    left: -128px;
+
+    &.active{
+      transform: translateX(128px);
+    }
+
+    &__content {
+      position: relative;
+      min-width: 320px;
+   
+      .contetn {
+        position: relative;;
+        height: 200px;
+  
+        .cover-media {
+          top: 24px;
+          left: 24px;
+  
+          img {
+            display: block;
+          }
+        }
+  
+        &__txt {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          height: 100%;
+          z-index: 100;
+  
+          .title-media {
+            margin-bottom: 8px;
+          }
+  
+          &>div {
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+          }
+        }
+      }
+  
+      .content-event {
+        height: 216px;
+  
+        .contetn__txt>div {
+          justify-content: space-around;
+          padding-left: 45px;
+          padding: 20px 0 20px 45px;
+        }
+      }
+  
+      .content-video {
+        height: 200px;
+  
+        .contetn__txt>div {
+          justify-content: flex-end;
+          padding-bottom: 20px;
+        }
+      }
+  
+      .content-music {
+        height: 128px;
+      }
+    }
+  }
+}
+
+// СИНЯЯ ТОЧКА НОВОГО ЭЛЕМЕНТА
+.card__content.new-feed {
+  &::after {
+    position: absolute;
+    content: '';
+    width: 11px;
+    height: 11px;
+    top: 20px;
+    border-radius: 50%;
+    right: 10px;
+    background: linear-gradient(0deg, #2459E2, #2459E2), #2E61E5;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  }
+}

@@ -1,0 +1,107 @@
+  .map-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    .content {
+      width: 100%;
+      height: 100%;
+
+      .local {
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+
+        #map {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .list {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 100%;
+        left: 0;
+        padding-bottom: 48px;
+
+        z-index: 100;
+        overflow-y: auto;
+        transition: .7s;
+
+        &.active {
+          top: 0;
+        }
+
+        .list-title {
+          position: relative;
+          padding: 30px 15px 40px 15px;
+
+          .title {
+            margin-bottom: 10px;
+          }
+          
+          &::after {
+            position: absolute;
+            content: '';
+            width: 32px;
+            height: 3px;
+            left: 50%;
+            bottom: 10px;
+            transform: translate(-50%, 0);
+            background: #FF781C;
+            border-radius: 5px;
+          }
+        }
+
+        .list-feed {
+          background: #151515;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+
+          & .element-wrapper:nth-last-of-type( n + 2 ){
+            border: 1px solid #2A2A2A;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  // map btn
+  .feed-btn,
+  .event-geo-btn {
+    position: absolute;
+    overflow: hidden;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #000;
+    bottom: 72px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+
+    z-index: 10;
+  }
+
+  .feed-btn {
+    left: 25px;
+
+    a {
+      position: absolute;
+      bottom: -5px;
+      left: 5px;
+    }
+  }
+
+  .event-geo-btn {
+    right: 25px;
+    
+    a {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }

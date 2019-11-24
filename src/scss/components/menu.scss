@@ -1,0 +1,88 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 28px;
+  background: #000;
+
+  .menu-cover {
+    position: relative;
+    width: 31px;
+    height: 31px;
+
+    a {
+      position: absolute;
+      width: 31px;
+      height: 31px;
+      overflow: hidden;
+      background-image: url("./img/menu/menu-sprite.png");
+  
+      img {
+        position: absolute;
+      }
+    }
+
+    .link-feeds{
+      img {
+        top: -1px;
+        left: 0;
+      }
+    }
+  
+    .link-event{
+      img {
+        top: 0;
+        left: -38px;
+      }
+    }
+  
+    .link-search{
+      img {
+        top: 0;
+        left: -80px;
+      }
+    }
+  
+    .link-profile {
+      img {
+        top: 0;
+        left: -125px;
+      }
+    }
+
+// active link style
+    .active{
+      img {
+        top: -37px;
+      }
+    }
+  }
+}
+
+.menu-map {
+  position: fixed;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  z-index: 1000;
+
+  a{
+    position: relative;
+    font-size: 10px;
+    line-height: 12px;
+    color: #505050;
+
+    &.counter::after {
+      top: -8px;
+      right: -13px;
+    }
+
+    &.active {
+      color: #FF781C;
+    }
+  }
+}

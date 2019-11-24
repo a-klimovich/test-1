@@ -1,0 +1,75 @@
+// titel block
+.title-block {
+  height: 96px;
+  padding: 32px 24px;
+  background: #151515;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+}
+
+// cover
+.cover-feed,
+.cover-media {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 8px;
+  opacity: .4;
+}
+
+// recomendate section
+.recommend {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 15px;
+  top: 0;
+  left: 0;
+
+  &__user-name{
+    color: #FF781C;
+  }
+
+  img {
+    position: absolute;
+    top: 4px; right: 5px;
+  }
+}
+
+
+
+// orange-btn recommend
+.mark-block {
+  position: relative;
+  min-width: 128px;
+  background: linear-gradient(26.66deg, #FF971C 20.96%, #FF6600 104.08%);
+  cursor: pointer;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+// counter
+.counter {
+  &::after {
+    content: '28';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #2459E2, #2459E2), #2E61E5;
+    color: #fff;
+    font-size: 8px;
+    line-height: 10px;
+  }
+}

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+
+  // deff font's
+  // font-family: SF Compact Display;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.h1 {
+  font-family: 'are';
+  font-size: 60px;
+  line-height: 50px;
+}
+
+h1 {
+  font-family: 'are';
+  font-size: 60px;
+  line-height: 50px;
+}
+
+h2 {
+  // font-family: SF Compact Display;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.h2 {
+  // font-family: SF Compact Display;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+
+.title-media {
+  // font-family: SF Compact Display;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.title-event {
+  // font-family: Uni Neue;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.gray-txt {
+  // font-family: SF Compact Display;
+  font-size: 14px;
+  line-height: 16px;
+  color: #D5D5D5;
+}
+
+.date-txt {
+  // SF Compact Display Semibold
+  font-size: 14px;
+  line-height: 16px;
+}
