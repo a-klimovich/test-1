@@ -1,0 +1,43 @@
+.feed-btn,
+.event-geo-btn {
+  position: absolute;
+  overflow: hidden;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.wrap-feed-btn,
+.wrap-event-geo-btn {
+  position: relative;
+  bottom: 120px;
+
+  span {
+    top: 0;
+    left: 60px;
+    z-index: 100;
+  }
+
+  span.counter_event-geo-btn {
+    top: 0;
+    right: 60px;
+    z-index: 100;
+  }
+}
+
+.feed-btn {
+  left: 25px;
+  background-image: url("../img/menu/map-btn-feed.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.event-geo-btn {
+  right: 25px;
+  background-image: url("../img/menu/geo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

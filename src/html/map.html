@@ -9,148 +9,60 @@
     <div class="content">
       <div class="local">
         <div id="map"></div>
-
-        <div class="feed-btn">
-          <a href="#" class="">
-            <img src="./img/menu/menu-sprite.png" alt="">
-          </a>
+        <div class="wrap-feed-btn">
+          <button onclick="addClass()" id="mapFeed" href="#" class="feed-btn"></button>
+          <span class="counter counter_active">28</span>
         </div>
         
-        <div class="event-geo-btn">
-          <a href="#">
-            <img src="./img/menu/geo.svg" alt="">
-          </a>
+        <div class="wrap-event-geo-btn">
+          <button href="#" class="event-geo-btn"></button>
+          <span class="counter"></span>
         </div>
       </div>
 
-      <!-- use .active for .list -->
-      <div class="list active">
-        <div class="list-title">
+      <div id="list" class="list">
+        <div onclick="hideClass()" class="list-title">
           <h2 class="title">
               Amsterdam
           </h2>
 
-          <p class="gray-txt">
+          <p class="gray-text">
               Netherlands
           </p>
         </div>
 
         <div class="list-feed">
-          <!-- EVENT card -->
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="mark-block">
-                <img src="./img/icon/white-recommend-mark.svg" alt="">
-              </div>
-          
-              <div class="card__content recommend-mark">
-                <!-- recommend block here -->
-          
-                <div class="contetn content-event">
-                  <div class="cover-media">
-                    <img src="./img/cover-img/recommend.png" alt="">
-                  </div>
-
-                  <div class="contetn__txt">
-                    <div>
-                      <p class="title-event">Final battle: Issei VS Hong <br>
-                        10 Red Bull BC One..</p>
-                      <p class="gray-txt">43:25</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- EVENT card -->
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="mark-block">
-                <img src="./img/icon/white-recommend-mark.svg" alt="">
-              </div>
-
-              <div class="card__content">
-                <!-- recommend block here -->
-                <div class="contetn content-event">
-                  <div class="cover-media">
-                    <img src="./img/cover-img/recommend.png" alt="">
-                  </div>
-
-                  <div class="contetn__txt">
-                    <div>
-                      <p class="title-event">Final battle: Issei VS Hong <br>
-                        10 Red Bull BC One..</p>
-                      <p class="gray-txt">43:25</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- EVENT card -->
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="mark-block">
-                <img src="./img/icon/white-recommend-mark.svg" alt="">
-              </div>
-
-              <div class="card__content">
-                <!-- recommend block here -->
-                <div class="contetn content-event">
-                  <div class="cover-media">
-                    <img src="./img/cover-img/recommend.png" alt="">
-                  </div>
-
-                  <div class="contetn__txt">
-                    <div>
-                      <p class="title-event">Final battle: Issei VS Hong <br>
-                        10 Red Bull BC One..</p>
-                      <p class="gray-txt">43:25</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- EVENT card -->
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="mark-block">
-                <img src="./img/icon/white-recommend-mark.svg" alt="">
-              </div>
-
-              <div class="card__content">
-                <!-- recommend block here -->
-
-                <div class="contetn content-event">
-                  <div class="cover-media">
-                    <img src="./img/cover-img/recommend.png" alt="">
-                  </div>
-
-                  <div class="contetn__txt">
-                    <div>
-                      <p class="title-event">Final battle: Issei VS Hong <br>
-                        10 Red Bull BC One..</p>
-                      <p class="gray-txt">43:25</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          @@loop('./event-card.html', [
+          { "card-style": "content-event",
+            "content-img": "./img/content/image-6.png",
+            "title-text": "King or queen of the <br> circle 2018 ",
+            "subtitle": "13 October",
+            "tag": "card_new"
+          },
+          { "card-style": "content-event",
+            "content-img": "./img/content/image-1.png",
+            "title-text": "Temple rock: 5 year <br> anniversary 2018",
+            "subtitle": "12 October ",
+            "targeting": "active"
+          },
+          { "card-style": "content-event",
+            "content-img": "./img/content/image-7.png",
+            "title-text": "Soul Rockerz 20",
+            "subtitle": "13 October ",
+            "tag": "card_new"
+          },
+          { "card-style": "content-event",
+            "content-img": "./img/content/image-8.png",
+            "title-text": "Rockland's 10 year <br> hip-hop showcase ",
+            "subtitle": "14 October ",
+            "tag": "card_new"
+          }
+          ])
         </div>
       </div>
     </div>
 
-    <div class="menu-map">
-      <a href="#" class="link-feed">Feed</a>
-      <a href="#" class="link-event active counter">Event</a>
-      <a href="#" class="link-search">Search</a>
-      <a href="#" class="link-profile">Profiel</a>
-    </div>
+    @@include('./map-menu.html')
   </div>
 
 

@@ -1,0 +1,14 @@
+.counter {
+  position: absolute;
+  top: -70%;
+  left: 100%;
+  border-radius: 25px;
+  background: linear-gradient(0deg, #2459E2, #2459E2), #2E61E5;
+  color: #fff;
+  font-size: 8px;
+  line-height: 10px;
+
+  &.counter_active {
+    padding: 4px 2px;
+  }
+}

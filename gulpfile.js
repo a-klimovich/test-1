@@ -50,7 +50,7 @@ gulp.task('styles', () => (
       browsers: ['last 5 versions'],
       cascade: false
     }))
-    // .pipe(minifycss()) TODO:
+    .pipe(minifycss())
     .pipe(gulp.dest(buildDirectory + 'css/'))
     .pipe(connect.reload())
 ))

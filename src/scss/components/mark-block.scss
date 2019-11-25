@@ -1,0 +1,19 @@
+.mark-block {
+  position: relative;
+  min-width: 128px;
+  background: linear-gradient(26.66deg, #FF971C 20.96%, #FF6600 104.08%);
+  cursor: pointer;
+  
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon/white-recommend-mark.svg");
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

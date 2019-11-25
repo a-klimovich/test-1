@@ -1,0 +1,17 @@
+.recommend {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 15px;
+  top: 0;
+  left: 0;
+
+  &__user-name{
+    color: #FF781C;
+  }
+
+  img {
+    position: absolute;
+    top: 4px; right: 5px;
+  }
+}
