@@ -1,4 +1,4 @@
-# Test project Pazz Pixels
+# Test project Jazz Pixels
 
 *How run this project*
 
